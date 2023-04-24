@@ -1,0 +1,278 @@
+.about-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-sub {
+  width: 85%;
+
+  text-align: center;
+}
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.summary {
+  text-align: start;
+  margin-left: 25px;
+}
+.para {
+  text-align: start;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+}
+.namesummary {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.hobby-maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 260px;
+  padding-left: 40px;
+  border-radius: 25% 0%;
+  border: 6px solid black;
+  transition: 0.8s;
+}
+.image-container:hover {
+  background-color: rgb(4, 183, 81);
+}
+.myphoto {
+  width: 100%;
+  height: 100%;
+}
+.full-profile {
+  display: flex;
+
+  align-items: center;
+}
+.makespace {
+  margin-bottom: 100px;
+}
+
+/* tech.js */
+
+.techcontainer {
+  width: 90px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  box-shadow: 1px 1px 5px 1px silver;
+  border-radius: 6px;
+  position: relative;
+  transform: 1s;
+}
+.technames {
+  color: black;
+  padding: 8px 17px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.techimg {
+  width: 98px;
+  height: 98px;
+}
+.techimg:hover + .technames {
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  display: block;
+}
+
+.boxdata {
+  width: 400px;
+  border: 2px solid black;
+  margin: 5px;
+}
+.techname {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+}
+.maintext {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alltechnologies {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.techbox {
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+.technames {
+  display: none;
+}
+.mainabout {
+  font-size: 60px;
+}
+
+.hobbiesimg {
+  width: 400px;
+}
+.hobbies-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 452px) {
+  .full-profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .hobbies-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .technologies-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .boxdata {
+    width: 90%;
+  }
+  .techcontainer {
+    width: 45%;
+  }
+  .hobbiesimg {
+    width: 100%;
+  }
+  .para {
+    line-height: 25px;
+    margin: 0;
+    text-align: start;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  .maintext {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 452px) and (max-width: 648px) {
+  .full-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .technologies-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxdata {
+    width: 90%;
+  }
+  .techcontainer {
+    width: 29%;
+  }
+  .hobbiesimg {
+    width: 100%;
+  }
+  .myphoto {
+    width: 100%;
+  }
+  .para {
+    line-height: 25px;
+    margin: 0;
+    text-align: start;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  .maintext {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 648px) and (max-width: 980px) {
+  .full-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .hobbies-container {
+    display: flex;
+  }
+  .technologies-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .boxdata {
+    width: 45%;
+  }
+  .techcontainer {
+    width: 29%;
+  }
+  .hobbiesimg {
+    width: 310px;
+  }
+  .techimg {
+    width: 90px;
+    height: 90px;
+  }
+  .myphoto {
+    width: 100%;
+  }
+  .para {
+    line-height: 23px;
+    margin: 0;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  .maintext {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .full-profile {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container {
+    height: 320px;
+  }
+  .summary {
+    width: 40%;
+  }
+}

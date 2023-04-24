@@ -1,0 +1,104 @@
+.sidebar {
+  width: 380px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  height: 91vh;
+  background-color: rgb(231, 234, 155);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.9s;
+  background-color: rgba(30, 28, 28, 0.811);
+  z-index: 2;
+}
+
+/* navbar */
+.active {
+  right: -380px;
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 240px;
+    height: 112vh;
+  }
+}
+
+.sidebar .link {
+  font-size: 25px;
+  transition: 0.4s;
+  color: rgb(205, 83, 83);
+  font-weight: 900;
+}
+.sidebar .link:hover {
+  font-size: 30px;
+  font-weight: 900;
+
+  font-weight: 600;
+  color: rgb(47, 203, 255);
+  text-shadow: 0px 2px 3px 4px rgb(47, 203, 255);
+}
+
+/* side */
+
+@media screen and (min-width: 2000px) {
+  .sidebar .link {
+    font-size: 34px;
+    width: 100%;
+    height: 100%;
+  }
+  .sidebar .link:hover {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .listdata {
+    margin-right: 29px;
+    height: 47px;
+    width: 130px;
+  }
+}
+
+.listdata {
+  height: 35px;
+  margin: 10px;
+  width: 200px;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  margin: 12px;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.link:hover::before {
+  position: absolute;
+  transform: translateZ(50px);
+  height: 5px;
+  top: 40px;
+  background-color: rgb(47, 203, 255);
+  animation: lines 1s ease forwards;
+}
+@keyframes lines {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .link:hover::before {
+    height: 8px;
+    bottom: -13px;
+  }
+}

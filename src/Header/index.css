@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px;
+  background-color: black;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin: 0;
+  color: white;
+  animation: animates 2s ease forwards;
+}
+
+@media screen and (min-width: 2000px) {
+  header {
+    padding: 35px;
+  }
+  .logo {
+    font-size: 34px;
+  }
+}
+
+@keyframes animates {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

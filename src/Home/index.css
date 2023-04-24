@@ -1,0 +1,472 @@
+.bodycontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 60px;
+  color: white;
+}
+
+.Homecontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.home-content {
+  width: 70%;
+}
+.profile-maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 40px 0px;
+  border-radius: 100%;
+  animation: photo 2s ease forwards;
+}
+
+@keyframes photo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.profile-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: -5px;
+  left: -5px;
+  background: linear-gradient(orange, yellow, violet, rgb(229, 92, 33));
+  background-color: rgb(0, 140, 255);
+  animation: animate 6s linear infinite;
+  transform-origin: bottom right;
+  z-index: 1;
+}
+
+.profile-container::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 170px;
+  height: 170px;
+  z-index: 1;
+  background: linear-gradient(rgb(255, 238, 0), blue, green, yellow);
+  animation: animate 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: 3s;
+}
+@media screen and (max-width: 800px) {
+  .profile-maincontainer {
+    order: 0;
+  }
+  .Homecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 75px;
+  }
+  .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+  .profile-container::before {
+    width: 110px;
+    height: 110px;
+  }
+  .profile-container::after {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .profile-maincontainer {
+    width: 600px;
+    height: 500px;
+  }
+  .profile-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .profile-container::before {
+    width: 300px;
+    height: 300px;
+  }
+  .profile-container::after {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.photocontainer {
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  inset: 9px;
+  border-radius: 100%;
+}
+
+.profile {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: -64px;
+  bottom: 66px;
+  transition: 0.3s;
+}
+
+.image {
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+  z-index: 4;
+
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+  .profile {
+    width: 810px;
+    height: 470px;
+  }
+  .image {
+    width: 570px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile {
+    width: 320px;
+    height: 180px;
+  }
+  .image {
+    width: 160px;
+    height: 200px;
+  }
+}
+.profile:hover {
+  position: absolute;
+  bottom: 90px;
+}
+.man {
+  position: absolute;
+  width: 200px;
+  top: 0px;
+  left: 360px;
+}
+model-viewer {
+  width: 600px;
+  height: 600px;
+  background-color: red;
+}
+
+.bird {
+  width: 100px;
+  position: absolute;
+  top: -7px;
+  left: -110px;
+  animation: aniicons 1s ease forwards;
+}
+.name {
+  font-size: 47px;
+  color: rgb(115, 0, 255);
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h1 {
+  font-size: 32px;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 7px;
+  animation: animates 2s ease forwards;
+}
+
+.l1 {
+  font-size: 27px;
+}
+
+.l3 {
+  display: flex;
+}
+.description {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  animation: animates 2s ease forwards;
+  width: 100%;
+}
+.home-content .span {
+  color: rgb(195, 138, 32);
+  margin-left: 7px;
+}
+@media screen and (max-width: 800px) {
+  .home-content .span {
+    font-size: 27px;
+    margin-left: 12px;
+  }
+  .l3 {
+    display: block;
+    font-size: 27px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .l1 {
+    font-size: 47px;
+  }
+  .l2 {
+    font-size: 67px;
+  }
+  .bird {
+    width: 200px;
+    top: -47px;
+    left: -220px;
+  }
+
+  .home-content .span {
+    font-size: 47px;
+    margin-left: 12px;
+  }
+  .l3 {
+    font-size: 47px;
+  }
+  .description {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .l1 {
+    font-size: 18px;
+  }
+  .l2 {
+    font-size: 26px;
+  }
+  .bird {
+    width: 60px;
+    top: -17px;
+    left: -45px;
+  }
+
+  .home-content .span {
+    font-size: 19px;
+    margin-left: 12px;
+  }
+  .l3 {
+    font-size: 19px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+
+@keyframes animates {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+video {
+  width: 100%;
+  height: 91vh;
+  object-fit: cover;
+}
+.videocontainer {
+  display: flex;
+  height: 90vh;
+}
+@media screen and (max-width: 800px) {
+  .videocontainer {
+    width: 100%;
+    height: 100vh;
+  }
+  video {
+    position: absolute;
+    width: 100vw;
+    height: 112vh;
+    top: 68px;
+    bottom: 0;
+  }
+}
+.demo {
+  list-style-type: none;
+  border: 1px solid black;
+  width: 40px;
+  border-radius: 100%;
+}
+box-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-top: 7px;
+  margin-right: 8px;
+  background-color: whitesmoke;
+  animation: aniicons 1s ease forwards;
+}
+
+box-icon:hover {
+  background-color: rgb(255, 191, 0);
+  transform: scale(1.3);
+}
+.button {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 7px;
+  border: none;
+  animation: aniicons 1s ease forwards;
+}
+
+.tag {
+  animation: aniicons 1s ease forwards;
+}
+@media screen and (min-width: 2000px) {
+  .tag {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+@keyframes aniicons {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.social {
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.b1 {
+  color: black;
+  background-color: rgb(255, 191, 0);
+  font-weight: 500;
+  color: black;
+}
+.b1:hover {
+  border: 2px solid rgb(255, 191, 0);
+  color: rgb(255, 191, 0);
+  background-color: transparent;
+}
+.b2 {
+  border: 2px solid rgb(255, 191, 0);
+  color: rgb(255, 191, 0);
+  background-color: transparent;
+}
+.b2:hover {
+  color: black;
+  background-color: rgb(255, 191, 0);
+  font-weight: 500;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .tag {
+    display: none;
+  }
+  .social {
+    width: 70%;
+    margin-top: 30px;
+  }
+  .touch {
+    margin-left: 30px;
+  }
+  .button {
+    width: 90px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  box-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+  }
+  a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .button {
+    width: 220px;
+    height: 70px;
+    font-size: 26px;
+  }
+  box-icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 14px;
+  }
+}
+
+.unorder {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  animation: photo 2s ease forwards;
+}
+@keyframes photo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
