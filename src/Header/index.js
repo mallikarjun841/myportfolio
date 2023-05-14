@@ -43,11 +43,11 @@ const Headers = (props) => {
               About
             </Link>
           </li>
-          <li>
-            <Link to="/more" className="link">
-              More
-            </Link>
-          </li>
+//           <li>
+//             <Link to="/more" className="link">
+//               More
+//             </Link>
+//           </li>
         </ul> */}
       </nav>
     </header>
