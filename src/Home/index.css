@@ -486,7 +486,7 @@ box-icon:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  animation: photo 2s ease forwards;
+/*   animation: photo 2s ease forwards; */
 }
 @keyframes photo {
   0% {
