@@ -2,8 +2,8 @@ import "./index.css";
 
 const Tech = (props) => {
   const { element } = props;
-  console.log(element);
   const { technologyname, image, category } = element;
+  console.log(image);
 
   return (
     <div className="techcontainer">

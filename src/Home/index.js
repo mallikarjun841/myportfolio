@@ -27,6 +27,7 @@ const Home = () => {
             <div className="home-content">
               <h1 className="h1 l1">Hello, It's Me</h1>
               <h1 className="h1 name l2">Mallikarjun</h1>
+
               <h1 className="h1 l3">
                 And I'm a
                 <span className="span">
@@ -63,7 +64,12 @@ const Home = () => {
                 <Environment preset="sunset" />
                 <OrbitControls />
               </Canvas> */}
-              <button className="button b1">Know Work</button>
+              <button
+                onClick={() => usenavigate("/projects")}
+                className="button b1"
+              >
+                Projects
+              </button>
               <button
                 onClick={() => usenavigate("/about")}
                 className="button b2"
@@ -78,7 +84,7 @@ const Home = () => {
                 src="https://media.giphy.com/media/Yn4nioYWSZMqiPNVuD/giphy.gif"
               />
               <div className="touch">
-                <p className="tag">Get Me At </p>
+                <p className="tag">Catch Me At :-</p>
                 <a
                   href="https://www.linkedin.com/in/mallikarjun-godishela84"
                   target="blank"

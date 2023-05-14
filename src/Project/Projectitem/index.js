@@ -4,8 +4,16 @@ import "./index.css";
 
 const Projectlist = (props) => {
   const { objects } = props;
-  const { arr, title, lid, imgurl, description, viewproject, githubcode } =
-    objects;
+  const {
+    arr,
+    title,
+    lid,
+    imgurl,
+    technologies,
+    description,
+    viewproject,
+    githubcode,
+  } = objects;
   const settings = {
     dots: true,
     infinite: true,
@@ -42,11 +50,9 @@ const Projectlist = (props) => {
       <div className="project-content-container">
         <h1 className="projecttitle">{title}</h1>
 
-        <p className="descriptiondata">
-          Implemented a responsive Online Food Ordering System like
-          Swiggy/Zomato where users can see popular restaurants with sort by
-          rating, specific restaurant details, adding or removing food
-        </p>
+        <p className="descriptiondata">{description}</p>
+
+        <p>Technologies Used:- {technologies}</p>
         <div>
           <a href={viewproject} target="_blank">
             <button className="projectviewbutton">view project</button>

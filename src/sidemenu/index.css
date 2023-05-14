@@ -1,16 +1,16 @@
 .sidebar {
-  width: 380px;
+  width: 320px;
   position: absolute;
   top: 15px;
   right: 0;
   height: 91vh;
-  background-color: rgb(231, 234, 155);
+
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.9s;
-  background-color: rgba(30, 28, 28, 0.811);
+  transition: width 2s;
+  background-color: silver;
   z-index: 2;
 }
 
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 800px) {
   .sidebar {
-    width: 240px;
+    width: 220px;
     height: 112vh;
   }
 }
@@ -30,7 +30,7 @@
 .sidebar .link {
   font-size: 25px;
   transition: 0.4s;
-  color: rgb(205, 83, 83);
+  color: black;
   font-weight: 900;
 }
 .sidebar .link:hover {

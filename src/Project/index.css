@@ -20,6 +20,9 @@
   font-size: 40px;
   margin-top: 5px;
 }
+.catergories {
+  text-align: center;
+}
 
 @media screen and (max-width: 425px) {
   .maintitle {
@@ -40,4 +43,16 @@
   .maintitle {
     font-size: 36px;
   }
+}
+
+/* switch.js */
+
+.buttoncategory {
+  margin: 5px;
+  padding: 4px 5px;
+  border-radius: 10px;
+}
+.highlightbutton {
+  color: rgb(30, 149, 214);
+  border: 2px solid rgb(30, 149, 214);
 }

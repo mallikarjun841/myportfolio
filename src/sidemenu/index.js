@@ -18,17 +18,17 @@ const Sidemenu = () => {
           </Link>
         </li>
         <li className="listdata">
-          <Link to="/contact" className="link">
+          <Link to="/contact/" className="link">
             Contact
           </Link>
         </li>
         <li className="listdata">
-          <Link to="/work" className="link">
-            work
+          <Link to="/certifications/" className="link">
+            certification
           </Link>
         </li>
         <li className="listdata">
-          <Link to="/about" className="link">
+          <Link to="/about/" className="link">
             About
           </Link>
         </li>
