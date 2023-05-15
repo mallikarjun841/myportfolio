@@ -6,7 +6,11 @@ header {
   position: relative;
   z-index: 3;
 }
-
+.threeline {
+  background-color: rgb(230, 229, 221);
+  padding: 2px 12px;
+  border: none;
+}
 @media screen and (max-width: 800px) {
 }
 
