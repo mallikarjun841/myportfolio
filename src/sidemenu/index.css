@@ -12,6 +12,9 @@
   transition: width 2s;
   background-color: silver;
   z-index: 2;
+  border-bottom-left-radius: 216px;
+  background-image: linear-gradient(gold,yellow,orange);
+  opacity: 1;
 }
 
 /* navbar */
