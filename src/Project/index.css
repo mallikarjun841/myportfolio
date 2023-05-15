@@ -52,6 +52,11 @@
   padding: 4px 5px;
   border-radius: 10px;
 }
+@media screen and (max-width: 425px) {
+  .buttoncategory {
+    font-size: 10px;
+  }
+}
 .highlightbutton {
   color: rgb(30, 149, 214);
   border: 2px solid rgb(30, 149, 214);
