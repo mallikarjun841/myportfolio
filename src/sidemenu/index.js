@@ -7,27 +7,27 @@ const Sidemenu = () => {
   return (
     <div className={`sidebar ${status && "active"}`}>
       <ul className="unorder">
-        <li className="listdata">
+        <li onClick={() => setStatus(!status)} className="listdata">
           <Link to="/" className="link">
             Home
           </Link>
         </li>
-        <li className="listdata">
+        <li onClick={() => setStatus(!status)} className="listdata">
           <Link to="/projects" className="link">
             Project
           </Link>
         </li>
-        <li className="listdata">
+        <li onClick={() => setStatus(!status)} className="listdata">
           <Link to="/contact/" className="link">
             Contact
           </Link>
         </li>
-        <li className="listdata">
+        <li onClick={() => setStatus(!status)} className="listdata">
           <Link to="/certifications/" className="link">
             Certification
           </Link>
         </li>
-        <li className="listdata">
+        <li onClick={() => setStatus(!status)} className="listdata">
           <Link to="/about/" className="link">
             About
           </Link>
