@@ -32,11 +32,11 @@ const Sidemenu = () => {
             About
           </Link>
         </li>
-        <li className="listdata">
-          <Link to="/more" className="link">
-            More
-          </Link>
-        </li>
+//         <li className="listdata">
+//           <Link to="/more" className="link">
+//             More
+//           </Link>
+//         </li>
       </ul>
     </div>
   );
