@@ -24,7 +24,7 @@ const Sidemenu = () => {
         </li>
         <li className="listdata">
           <Link to="/certifications/" className="link">
-            certification
+            Certification
           </Link>
         </li>
         <li className="listdata">
